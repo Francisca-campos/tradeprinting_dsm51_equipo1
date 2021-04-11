@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "3756005660",
+    "project_id": "tradeprinting-8f251",
+    "storage_bucket": "tradeprinting-8f251.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3756005660:android:1e4b443d44d411303742d9",
+        "android_client_info": {
+          "package_name": "com.example.tradeprinting_dsm51_equipo1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3756005660-menrlkajqaae5sntg0ajmbs5ms5cnkfh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tradeprinting_dsm51_equipo1",
+            "certificate_hash": "2991a3714e8d1205f3c2a7941f5fe7ca96262a5a"
+          }
+        },
+        {
+          "client_id": "3756005660-cee6t7jj7cfaq2afmm2vfoijvkl4957a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu1fhq_thchdlBUP6n_TT3bUjsnD4Hfs0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3756005660-cee6t7jj7cfaq2afmm2vfoijvkl4957a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
