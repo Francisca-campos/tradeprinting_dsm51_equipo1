@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:tradeprinting_dsm51_equipo1/auth/auth.dart';
 import 'package:tradeprinting_dsm51_equipo1/model/producto_model.dart';
 import 'package:tradeprinting_dsm51_equipo1/pages/admin/add_productos.dart';
-//import 'package:tradeprinting_dsm51_equipo1/pages/admin/edit_productos.dart';
-//import 'package:tradeprinting_dsm51_equipo1/pages/admin/view_productos.dart';
+import 'package:tradeprinting_dsm51_equipo1/pages/admin/edit_producto.dart';
+import 'package:tradeprinting_dsm51_equipo1/pages/admin/view_producto.dart';
 
 class CommonThings {
   static Size size;
@@ -119,13 +119,13 @@ class _InicioPageState extends State<InicioPage> {
                                 image: document['image'].toString(),
                                 producto: document['producto'].toString(),
                               );
-                              //Navigator.push(
-                              //  context,
-                              //  MaterialPageRoute(
-                              //      builder: (context) => EditProducto(
-                              //producto: producto,
-                              //idProducto: document.documentID,
-                              //uid: userID)));
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => EditProducto(
+                                          producto: producto,
+                                          idProducto: document.documentID,
+                                          uid: userID)));
                             },
                           ),
                         ),
@@ -161,13 +161,13 @@ class _InicioPageState extends State<InicioPage> {
                               image: document['image'].toString(),
                               producto: document['producto'].toString(),
                             );
-                            //Navigator.push(
-                            // context,
-                            //MaterialPageRoute(
-                            // builder: (context) => ViewProducto(
-                            // producto: producto,
-                            // idProducto: document.documentID,
-                            // uid: userID)));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ViewProducto(
+                                        producto: producto,
+                                        idProducto: document.documentID,
+                                        uid: userID)));
                           },
                         ),
                       ],
