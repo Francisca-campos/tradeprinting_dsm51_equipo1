@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tradeprinting_dsm51_equipo1/auth/auth.dart';
 import 'package:intro_slider/slide_object.dart';
 import 'package:intro_slider/intro_slider.dart';
+import 'package:tradeprinting_dsm51_equipo1/login_admin/login_page.dart';
 
 // import 'package:tradeprinting_dsm51_equipo1/login_admin/login_page.dart';
 class IntroScreen extends StatefulWidget {
@@ -97,7 +98,14 @@ class _IntroScreenState extends State<IntroScreen> {
   }
 
   void onDonePress() {
-    // Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage(auth: widget.auth, onSignIn: widget.onSignIn,)),);
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+          builder: (context) => LoginPage(
+                auth: widget.auth,
+                onSignIn: widget.onSignIn,
+              )),
+    );
   }
 
   Widget renderNextBtn() {

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:tradeprinting_dsm51_equipo1/auth/auth.dart';
+import 'package:tradeprinting_dsm51_equipo1/login_admin/menu_page.dart';
+import 'package:tradeprinting_dsm51_equipo1/login_admin/sliders_page.dart';
 
 class RootPage extends StatefulWidget {
   RootPage({this.auth});
@@ -42,10 +44,16 @@ class _RootPageState extends State<RootPage> {
 
     switch (_authStatus) {
       case AuthStatus.notSignIn:
-        // return IntroScreen(auth: widget.auth,onSignIn: _signIn,);
+        return IntroScreen(
+          auth: widget.auth,
+          onSignIn: _signIn,
+        );
         break;
       case AuthStatus.signIn:
-        //return HomePage( auth: widget.auth,onSignedOut: _signOut,);
+        return HomePage(
+          auth: widget.auth,
+          onSignedOut: _signOut,
+        );
         break;
     }
     return _widget;

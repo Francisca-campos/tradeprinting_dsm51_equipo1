@@ -1,6 +1,7 @@
 //import 'package:tradeprinting_dsm51_equipo1/pages/admin/show_recipe.dart';
 //import 'package:tradeprinting_dsm51_equipo1/pages/maps_page.dart';
 //import 'package:tradeprinting_dsm51_equipo1/pages/myrecipes/list_my_recipe.dart';
+import 'package:tradeprinting_dsm51_equipo1/pages/admin/show_recipe.dart';
 import 'package:tradeprinting_dsm51_equipo1/widgets/home_page.dart';
 
 abstract class Content {
@@ -8,7 +9,7 @@ abstract class Content {
   //Future<InicioPage> productos(String id);
   //Future<MapsPage> mapa();
   //Future<ListMyrecipes> myrecipe(String id);
-  //Future<InicioPage> admin();
+  Future<InicioPage> admin();
 }
 
 class ContentPage implements Content {
@@ -20,9 +21,9 @@ class ContentPage implements Content {
   //return MapsPage();
   //}
 
-//  Future<IncioPage> admin() async {
-  //return InicioPage();
-  //}
+  Future<InicioPage> admin() async {
+    return InicioPage();
+  }
 
   //Future<IncioPage> productos(String id) async {
   //print('en content page $id');
