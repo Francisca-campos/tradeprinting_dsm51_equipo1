@@ -1,15 +1,20 @@
+//import 'package:tradeprinting_dsm51_equipo1/pages/admin/show_recipe.dart';
+//import 'package:tradeprinting_dsm51_equipo1/pages/maps_page.dart';
+//import 'package:tradeprinting_dsm51_equipo1/pages/myrecipes/list_my_recipe.dart';
+import 'package:tradeprinting_dsm51_equipo1/widgets/home_page.dart';
+
 abstract class Content {
-  //Future<HomePageTradeprinting_dsm51_equipo1> lista();
-  //<InicioPage> productos(String id);
+  Future<HomePageProductos> lista();
+  //Future<InicioPage> productos(String id);
   //Future<MapsPage> mapa();
   //Future<ListMyrecipes> myrecipe(String id);
   //Future<InicioPage> admin();
 }
 
-class contentPage implements Content {
-  //Future<HomePageTradeprinting_dsm51_equipo1> lista() async {
-  //return HomePageTradeprinting_dsm51_equipo1();
-  //}
+class ContentPage implements Content {
+  Future<HomePageProductos> lista() async {
+    return HomePageProductos();
+  }
 
   //Future<MapsPage> mapa() async {
   //return MapsPage();

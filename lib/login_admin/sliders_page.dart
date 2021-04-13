@@ -3,6 +3,7 @@ import 'package:tradeprinting_dsm51_equipo1/auth/auth.dart';
 import 'package:intro_slider/slide_object.dart';
 import 'package:intro_slider/intro_slider.dart';
 
+// import 'package:tradeprinting_dsm51_equipo1/login_admin/login_page.dart';
 class IntroScreen extends StatefulWidget {
   IntroScreen({this.auth, this.onSignIn});
   final BaseAuth auth;
