@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tradeprinting_dsm51_equipo1/auth/auth.dart';
+import 'package:tradeprinting_dsm51_equipo1/widgets/food_body.dart';
+import 'package:tradeprinting_dsm51_equipo1/widgets/foot_top.dart';
 
 class HomePageProductos extends StatefulWidget {
   @override
@@ -40,7 +42,7 @@ class _HomePageProductosState extends State<HomePageProductos> {
           ),
           Align(
             alignment: Alignment.topCenter,
-            // child: FoodTop(),
+            child: FoodTop(),
           ),
           Align(
             alignment: Alignment.topCenter,
@@ -55,8 +57,8 @@ class _HomePageProductosState extends State<HomePageProductos> {
             ),
           ),
           Expanded(
-              //child: FoodBody(),
-              ),
+            child: FoodBody(),
+          ),
         ],
       ),
     );
