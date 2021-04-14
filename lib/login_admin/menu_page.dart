@@ -4,7 +4,6 @@ import 'package:tradeprinting_dsm51_equipo1/auth/auth.dart';
 import 'package:tradeprinting_dsm51_equipo1/login_admin/contentPage.dart';
 import 'package:tradeprinting_dsm51_equipo1/widgets/home_page.dart';
 //import 'package:tradeprinting_dsm51_equipo1/pages/admin/mostrargrid_page.dart';
-//import 'package:tradeprinting_dsm51_equipo1/widgets/home/home_page.dart';
 
 const PrimaryColor = const Color(0xFF19212B);
 

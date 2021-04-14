@@ -1,6 +1,3 @@
-//import 'package:tradeprinting_dsm51_equipo1/pages/admin/show_recipe.dart';
-//import 'package:tradeprinting_dsm51_equipo1/pages/maps_page.dart';
-//import 'package:tradeprinting_dsm51_equipo1/pages/myrecipes/list_my_recipe.dart';
 import 'package:tradeprinting_dsm51_equipo1/pages/admin/show_recipe.dart';
 import 'package:tradeprinting_dsm51_equipo1/widgets/home_page.dart';
 

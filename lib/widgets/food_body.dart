@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:tradeprinting_dsm51_equipo1/auth/auth.dart';
 import 'package:tradeprinting_dsm51_equipo1/model/producto_model.dart';
-//import 'package:recipes/pages/admin/ver_receta.dart';
+import 'package:tradeprinting_dsm51_equipo1/pages/admin/view_producto.dart';
 
 class FoodBody extends StatefulWidget {
   @override
@@ -56,14 +56,13 @@ class _FoodBodyState extends State<FoodBody> {
                                   image: document['image'].toString(),
                                   producto: document['producto'].toString(),
                                 );
-                                // Navigator.push(
-                                //     context,
-                                //     MaterialPageRoute(
-                                //         builder: (context) => VerReceta(
-                                //             recipe: recipe,
-                                //             idRecipe:
-                                //                 document.documentID,
-                                //             uid: userID)));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => ViewProducto(
+                                            producto: producto,
+                                            idProducto: document.documentID,
+                                            uid: userID)));
                               },
                               child: Stack(
                                 children: <Widget>[

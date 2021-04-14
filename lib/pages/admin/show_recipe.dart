@@ -46,8 +46,7 @@ class _InicioPageState extends State<InicioPage> {
     CommonThings.size = MediaQuery.of(context).size;
     //print('Width of the screen: ${CommonThings.size.width}');
     return new Scaffold(
-      body: StreamBuilder(
-        stream: Firestore.instance.collection("colproductos").snapshots(),
+      body: StreamBuilder(stream: Firestore.instance.collection("colproductos").snapshots(),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
           if (!snapshot.hasData) {
             return Text("loading....");
